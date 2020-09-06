@@ -1,3 +1,6 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
 #header {
   display: flex;
   background-color: #3e3e44;
@@ -5,12 +8,12 @@
   color: #e5e5e5;
 }
 #mainNav ul {
-  display: flex;
+  display: inline-flex;
 }
-#header p {
-  margin-inline-start: 30px;
+#title {
+  margin-inline-start: 40px;
 }
-/* set margin */
+
 #mainNav li {
   list-style: none;
   margin-inline-end: 40px;
@@ -31,7 +34,9 @@
   margin-left: 30px;
   margin-right: 30px;
   padding: 50px;
+  border-radius: 10px;
 }
+
 #aboutCard h1 {
   margin-left: 50px;
 }
@@ -39,23 +44,32 @@
   width: 400px;
   margin-left: 50px;
 }
-.caseStudyImage {
-  width: 125px;
+
+#caseStudySection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 24px;
+  margin: 40px;
 }
-.caseStudyImage1 {
-  margin-top: 60px;
-  width: 175px;
-}
-#caseStudy {
-  display: inline-flex;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
+
 .caseStudyCard {
   background-color: #f2e2e5;
-  margin-inline-start: 50px;
-  margin-inline-end: 50px;
   padding: 60px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.projectImgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  overflow: hidden;
+}
+
+.caseStudyImage {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 #socialIcons img {
